@@ -1,0 +1,24 @@
+pre[class*="language-"] {
+  display: flex; //fix height
+  background-color: #222526;
+  padding: 0;
+  margin: 1em 0;
+  position: relative;
+
+  mat-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+  
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
+    }
+}
+
+// div.code-toolbar>.toolbar>.toolbar-item>button {
+//   border-radius: 0;
+//   padding: 0.5em;
+// }
+
