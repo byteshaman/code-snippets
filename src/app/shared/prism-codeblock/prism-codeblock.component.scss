@@ -1,24 +1,29 @@
+
 pre[class*="language-"] {
   display: flex; //fix height
   background-color: #222526;
-  padding: 0;
+  padding: 20px 5px; // prevent icon overlap
   margin: 1em 0;
   position: relative;
 
-  mat-icon {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-  
-      &:hover {
-        cursor: pointer;
-        color: white;
-      }
-    }
+  code {
+    padding: 0.5em;
+    line-height: 0.8;
+  }
 }
 
-// div.code-toolbar>.toolbar>.toolbar-item>button {
-//   border-radius: 0;
-//   padding: 0.5em;
-// }
+.prism-container {
+  position: relative;
+  mat-icon {
+    transform: scale(0.7); //resize icon 
+    position: absolute;
+    z-index: 2; //show icon above pre
+    top: 0px;
+    right: 0px;
 
+    &:hover {
+      cursor: pointer;
+      color: white;
+    }
+  }
+}

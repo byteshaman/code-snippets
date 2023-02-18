@@ -1,10 +1,7 @@
-<div>{{description}}
-  <pre>
-    <code class="lang-{{language}}">
-      {{code}}
-    </code>
-    <mat-icon [cdkCopyToClipboard]="code" (click)="changeIcon()"> 
-      {{iconName}}
-    </mat-icon>
-  </pre>
+{{description}}
+<div class="prism-container">
+  <mat-icon [cdkCopyToClipboard]="code" (click)="changeIcon()">
+    {{iconName}}
+  </mat-icon>
+  <pre><code class="lang-{{language}}">{{code}}</code></pre>
 </div>

@@ -8,3 +8,9 @@
 .mat-mdc-tab .mdc-tab__text-label {
   color: #f44336;
 }
+
+.mat-mdc-tab-body-content  app-prism-codeblock {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}

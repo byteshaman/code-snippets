@@ -2,12 +2,20 @@ import { Snippet } from './../shared/interfaces';
 
 export const nvmSnippets: Snippet[] = [
   {
-    description: 'Displays the current running version of NVM for Windows',
+    description: 'Display the current running version of NVM',
     code: `nvm v`
   },
   {
     description: 'Display active version',
     code: `nvm current`
+  },
+  {
+    description: 'Switch to the latest installed version',
+    code: `nvm use node`
+  },
+  {
+    description: 'Switch to a specific version',
+    code: `nvm use <version>`
   },
   {
     description: 'List local versions',
