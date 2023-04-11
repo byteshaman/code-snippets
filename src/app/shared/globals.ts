@@ -12,11 +12,17 @@ export const languages: Language[] = [
     label: 'nvm',
     prismLabel: 'txt'
   },
+  {
+    extendedLabel: 'Angular CLI',
+    label: 'acli',
+    prismLabel: 'txt'
+  },
 ];
 
 export const snippets: SnippetList = {
   'js': s.jsSnippets,
   'nvm': s.nvmSnippets,
+  'acli': s.acliSnippets,
 }
 
 

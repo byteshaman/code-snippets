@@ -11,7 +11,7 @@ export const nvmSnippets: Snippet[] = [
   },
   {
     description: 'Switch to the latest installed version',
-    code: `nvm use node`
+    code: `nvm use lts`
   },
   {
     description: 'Switch to a specific version',
